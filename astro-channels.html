@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">    </script>
+
+    <title>Astro-channels list</title>
+</head>
+
+<body>
+<!-- top logo-->
+<div class="container Logo">
+<div class="header">
+            <img style="width: 95px; position: absolute; padding-left: 20px;" src="http://astrocontent.s3.amazonaws.com/AstroContent/Astro_Head_Foot/production/images/acm_headfoot/astrologo.png"/>
+        </div>
+</div>
+
+<!-- fix (orange #f4511e) div-->
+<div class="fixDiv" style="position: fixed; width: 100%; background-color: #eb4e00; padding: 15px; color: white; text-transform: uppercase;">
+        <div class="container text" style="width: 80%;">
+        <a href="#" style="font-size: 20;">What's on</a>
+        <a class="tx1">Home</a></div>
+  </div>
+
+<!-- Main div -->
+<div class="container">
+    <!-- title channel -->
+			    <div class="row">
+			    	<div class="col s6">
+			    		<h1 class="mainTitle">Channels</h1>
+			    	</div>
+			    	<div class="col s6 channelRightSec">
+				    	<ul class="right tabs">
+				    		<li class="tab"><a href="#gridChannel" class="active"><div class="icon icon-channel-grid"></div></a></li>
+				    		<li class="tab"><a href="#listChannel"><div class="icon icon-channel-list"></div></a></li>
+				    	</ul>
+			    	</div>
+			    </div>
+			    <div class="row trending-top-sec">
+			    	<div class="col s8">
+			    		<div class="dropdownSec">
+				    		<div class="dropdown desktop">
+								<a class='dropdown-button' href='#' data-activates='dropdown1' style="float: left; margin-right: 20px;">CATEGORIES
+									<span class="icon-dropdown"></span>
+								</a>
+
+								  <!-- Dropdown Structure -->
+								<ul id='dropdown1' class='dropdown-content dropdown-menu'>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox selected"> <input type="checkbox" name="category"></span>
+								    		Kids
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Learning
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		LifeStyle
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Movies
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Music
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		News
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Radio
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Sport
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Kids
+									    </label>
+								    </li>
+								    <li class="btn-Section">
+								    	<button class=" btn-apply"> APPLY</button>
+								    	<button class=" btn-clear"> CLEAR ALL</button>
+								    </li>
+
+								</ul>
+				    		</div>
+			    		</div>
+			    		<div class="dropdownSec">
+				    		<div class="dropdown desktop">
+								<a class='dropdown-button' href='#' data-activates='dropdown1' style="float: left;">LANGUAGES
+									<span class="icon-dropdown"></span>
+								</a>
+
+								  <!-- Dropdown Structure -->
+								<ul id='dropdown1' class='dropdown-content dropdown-menu'>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox selected"> <input type="checkbox" name="category"></span>
+								    		Chinese
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Indian
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		International
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Korean & Japanese
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Malay
+									    </label>
+								    </li>
+								    <li>
+								    	<label>
+								    		<span class="custom-checkbox"> <input type="checkbox" name="category"></span>
+								    		Mutiple Language
+									    </label>
+								    </li>
+								    <li class="btn-Section">
+								    	<button class=" btn-apply"> APPLY</button>
+								    	<button class=" btn-clear"> CLEAR ALL</button>
+								    </li>
+
+								</ul>
+				    		</div>
+			    		</div>
+
+			    		<!-- Dropdown Trigger -->
+			    	</div>
+			    	<div class="col s4 list-padding	">
+			    		<ul class="rightSectionTopTrending">
+					        <li class=" HD tooltipped active" alt="HD Active logo" data-position="bottom" data-delay="50" data-tooltip="HD Channels"><div class="icon icon-hd-icon"></div></li>
+					        <li class=" SD tooltipped" alt="SD Active logo" data-position="bottom" data-delay="50" data-tooltip="SD Channels"><div class="icon icon-sd-icon"></div></li>
+					        <li class=" GO tooltipped" alt="GO Active logo" data-position="bottom" data-delay="50" data-tooltip="Astro on the Go Channels"><div class="icon icon-go-icon"></div></li>
+					        <li class=" Heart tooltipped" alt="FAV logo" data-position="bottom" data-delay="50" data-tooltip="My Faverites"><div class="icon icon-heart-icon"></div></li>
+				      </ul>
+			    	</div>
+			    </div>
+    <!-- First Line -->
+    <div class="row1">
+        <div class="title">Channels</div>
+        <div class="top-icon">
+            <div class="icon icon-channel-list"></div>
+            <div class="icon icon-channel-grid"></div>
+        </div>
+    </div>
+    <!-- Second row -->
+    <div class="row2">Channels</div>
+    <!-- channels list -->
+    <div id="gridChannel" class="gridChannelWrap active">
+        
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/108_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 1</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 101</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/101_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 2</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 102</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/102_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 3</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 103</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/103_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 4</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 104</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/103_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 5</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 105</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/105_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 6</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 106</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/108_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 1</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 101</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/101_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 2</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 102</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/102_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 3</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 103</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/103_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 4</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 104</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/103_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 5</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 105</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <div class="channel-align">
+                        <div class="img-logo">
+                        <img src="https://astro-channel.herokuapp.com/images/105_100.png"/></div>
+                    </div>
+                    <h2 class="img-title">TV 6</h2>
+                </a>
+                <div class="img-channel-sec">
+                   <a href="#">
+                    <div class="img-chnnel-left"> CH 106</div>
+                   </a>
+                   <div class="img-chnnel-right">
+                    <div class="icon-heart-icon"></div>
+                   </div> 
+                </div>
+            </li>
+        </ul>
+        </div>
+</div>
+
+<!-- bottom bar-->
+<div class="bottomBar">
+    <div class="bottomText">
+        <div class="row">
+            <div class="col s2" style="border-right: 1px solid white; font-size: 20px;">What's on</div>
+            <div class="col s1">Home</div>
+            <div class="col s1">TV Guide</div>
+            <div class="col s1">Channels</div>
+            <div class="col s1">Favourite</div>
+            <div class="col s1">Faq</div>   
+            <div class="col s1">Feedback</div>                       
+        </div>
+    </div>
+    <div class="b-pink">
+            <div class="smPink">
+                <div class="Left" style="width: 50%;">
+                    Corporate<br />
+                    <hr />
+                </div>
+                <div class="Left" style="width: 25%;">
+                    Need assistance?<br />
+                    <hr />
+                </div>
+                <br /><br />
+                <div class="Left" style="width: 25%;">
+                    <a href="#">About Astro</a><br />
+                    <a href="#">Media Room</a><br />
+                    <a href="#">Astro Publications</a><br />
+                    <a href="#">Buy an Ad</a><br />
+                    <a href="#">Astro production</a><br />
+                </div>
+                <div class="Left" style="width: 25%;">
+                    <a href="#">Careers @ Astro</a><br />
+                    <a href="#">Astro Holdings</a><br />
+                    <a href="#">Astro Radio</a><br />
+                    <a href="#">Content Distribution Portal</a><br />
+                    <a href="#">Businiss Partner Portal</a><br />
+                </div>
+                <div class="Left" style="width: 25%;">
+                    <a>Contact Astro via our <a href="#" class="FB">Feedback</a> Form, call our customer support service line at <b>03-9543 3838</b>, or <a href="#" class="FB">Locate a Branch</a> near you</a>
+                </div>
+            </div>
+            
+    </div>
+    <div class="lastText">
+        <div class="Left">
+            <div class="miniItem" style="padding-left: 0px;"><a href="#">Sitemap</a></div>
+            <div class="miniItem"><a href="#">Privacy Policy</a></div>
+            <div class="miniItem"><a href="#">Privacy Notice</a></div>
+            <div class="miniItem"><a href="#">Website Terms of Use</a></div>
+            <div class="miniItem" style="border: none;"><a href="#">General Terms & Condition</a></div><br />
+            <br /><b>Copyright © 2017. Measat Broadcast Network Systems Sdn Bhd (240064-A). All Rights Reserved.</b>
+        </div>
+        <div class="Right">
+            <a class="Icon" href="#"><img src="http://astrocontent.s3.amazonaws.com/AstroContent/Astro_Head_Foot/production/images/acm_headfoot/facebook_icon.png"/></a>
+            <a class="Icon" href="#"><img src="http://astrocontent.s3.amazonaws.com/AstroContent/Astro_Head_Foot/production/images/acm_headfoot/twitter_icon.png"/></a>
+        </div>
+    </div>
+</div>
+
+</body>
+<style>
+* {margin: 0 auto;}
+a {text-decoration: none;}
+.header {
+    height: 75px;
+    position: relative;
+    padding-left: 68px;     padding-top: 15px;
+}
+.Logo {
+    width: 80%;
+}
+.fixDiv {}
+.container { width: 80%;}
+.bottomBar {}
+.IconImage {width: 30px; padding-left: 10px;}
+.top-icon {float: right;}
+.bottomBar {    color: white;
+    background-color: #333;
+    width: 100%;
+    display: inline-block;}
+.bottomText {padding: 2% 11%;
+    text-transform: uppercase;
+    font-size: 14px;}
+.bottomText a {
+    display: inline-block;
+    padding: 0% 13%;
+    color: white;
+/*    text-decoration: none; */
+    }
+.bottomArea { 
+    padding-right: 3%;
+    width: 25%;
+    float: left;}
+.bottomTitle {
+    font-size: 14px;
+}
+h5 {color: white;}
+.channels {
+    width: 80%;
+}
+
+
+.channel-align {
+    height: 120px;
+    vertical-align: middle;
+    display: table-cell;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 24.3%;
+}
+.img-logo {
+    text-align: center;
+}
+.img-title {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.img-channel-sec {
+    border-top: 1px solid #e5e5e5;
+    clear: both;
+    overflow: hidden;
+}
+.img-chnnel-left {
+    float: left;
+    padding: 5px 5px;
+    font-size: 16px;
+}
+.img-chnnel-right {
+    float: right;
+    border-left: 1px solid #e5e5e5;
+    padding: 4px 10px;
+}
+.img-chnnel-right .icon-heart-icon {
+    font-size: 22px;
+    color: #e3e3e3;
+    width: 25px;
+    height: 25px;
+}
+#gridChannel {display: inline-block;}
+#gridChannel ul li {
+    margin-right: 5px;  margin-top: 5px;
+    float: left;
+    padding: 3px;
+    border: 1px solid #e5e5e5;
+    width: 250px;
+}
+#gridChannel ul li a {color: black;}
+.b-pink {
+    display: inline-block;
+    width: 100%;
+    background-color: #9f0962;
+    border-top: 6px solid #ec008c;
+    padding-bottom: 20px;
+}
+.smPink {
+    width: 85%;
+    color: white;
+}
+.row .col .s1 {text-align: center;}
+.Left       {padding-left: 5%; 
+    display: inline-block;
+    padding-top: 20px;}
+.Left a   {color: white;} 
+.lastText   { color: white; width: 85%; padding-bottom: 25px; font-size: 12px;}
+.miniItem   {
+    float: left;
+    padding: 0px 7px;
+    border-right: 1px solid white;
+}
+.miniItem a {
+    /*    text-decoration: none; */
+    color: white;}
+.FB {color: white; font-weight: bold;}
+.FB:hover {text-decoration: underline;}
+.Right {float: right; margin-top: 3%;}
+.Icon img{width: 32px; padding-left: 3px;}
+</style>
+</html>
